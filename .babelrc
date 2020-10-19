@@ -12,16 +12,15 @@
       "generateScopedName": "[name]_[local]_[hash:base64:5]",
       "filetypes": {
         ".scss": {
-          "syntax": "postcss-scss"
+          "syntax": "postcss-scss",
+          "plugins": ["postcss-nested"]
         }
       },
-      "webpackHotModuleReloading": true,
-      "handleMissingStyleName": "warn"
+      "webpackHotModuleReloading": true
     }],
     ["transform-react-pug", {
       "classAttribute": "styleName"
     }],
-
     "transform-class-properties"
   ],
   "presets": [
@@ -36,7 +35,8 @@
           "generateScopedName": "[hash:base64:5]",
           "filetypes": {
             ".scss": {
-              "syntax": "postcss-scss"
+              "syntax": "postcss-scss",
+              "plugins": ["postcss-nested"]
             }
           },
           "webpackHotModuleReloading": true
