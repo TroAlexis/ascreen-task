@@ -1,0 +1,62 @@
+@import '~Scss/config';
+
+$label-background-color: #87b0ba;
+
+$label-font-weight: bold;
+$label-font-size: 24px;
+$label-line-height: 35px;
+$label-letter-spacing: 0.015em;
+
+$label-sizes: 190, 200, 230, 245, 260;
+
+
+
+
+.mountain-icon {
+	display: inline-flex;
+	flex-direction: column;
+
+	cursor: pointer;
+
+	transition: transform 100ms ease-in;
+
+	&:hover {
+		transform: scale(1.025);
+	}
+
+	.label {
+		margin-top: 10px;
+	}
+}
+
+.icon {
+	@include push--auto;
+}
+
+.label {
+	@include push--auto;
+	padding: 5px 20px;
+
+	text-align: center;
+
+	text-transform: uppercase;
+
+	background-color: $label-background-color;
+	border-radius: 25px;
+
+	&__title {
+		color: #fff;
+		font-weight: $label-font-weight;
+		font-size: $label-font-size;
+		line-height: $label-line-height;
+		letter-spacing: $label-letter-spacing;
+	}
+}
+
+:global {
+	@each $size in $label-sizes {
+		.w-#{$size} {
+			width: #{$size}px;
+		}
+	}
+}

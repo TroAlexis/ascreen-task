@@ -1,10 +1,9 @@
+@import '~Scss/utils/fonts';
 @import '~Scss/config';
 @import '~Scss/reset';
 @import '~Scss/ui';
 
 html {
-	height: 100%;
-
 	color: $color-font--main;
 	font-size: $font-size--main;
 	@include mq('desktop', max) {
@@ -22,6 +21,10 @@ html {
 }
 
 body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100vh;
 	margin: 0;
 	padding: 0;
 
@@ -29,6 +32,14 @@ body {
 	font-size: $font-size--main;
 	font-family: $font--main;
 
+	background-color: #1e5581;
+
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+.root {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
