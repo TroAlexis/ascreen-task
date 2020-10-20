@@ -1,17 +1,16 @@
 @import '~Scss/config';
 
 .gallery-info {
-	display: flex;
-	flex-direction: column;
+	margin-bottom: 6%;
 
-	padding: 135px 110px 0 80px;
+	padding: 12.3% 0 0 7.3%;
 
 	color: #fff;
 
 }
 
 .title {
-	margin-bottom: 25px;
+	margin-bottom: 2.26%;
 
 	font-size: 64px;
 	line-height: 94px;
@@ -21,14 +20,28 @@
 $article-gap: 30px;
 
 .article {
-	margin: -1 * $article-gap 0 -1 * $article-gap 0;
+	overflow-y: auto;
 
 	font-size: 16px;
 	line-height: 24px;
 
 	&__paragraph {
-		margin: $article-gap 0 $article-gap 0;
+		margin-bottom: 30px;
+	}
 
+	&__paragraph:last-of-type {
+		margin-bottom: 0;
 	}
 }
 
+$icons-gap: 11.5px;
+
+.scroll-icons {
+	display: inline-flex;
+	align-self: center;
+	margin: 0 -1 * $icons-gap 7.6% -1 * $icons-gap;
+
+	.icon {
+		margin: 0 $icons-gap 0 $icons-gap;
+	}
+}
