@@ -1,17 +1,23 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 import './mountain-icon.scss';
 
 const MountainIcon = ({
-  imageUrl, name, labelSize, className,
+  nameEng, nameRus, labelSize, className,
 }) => pug`
-  .mountain-icon(className=className)
-    img.icon(src=require('Images/mountain-icons/'+imageUrl+'.png'))
+  Link(to="/mountains/"+nameEng).mountain-icon(className=className)
+    img.icon(src=require('Images/mountain-icons/'+nameEng+'.png'))
     .label(className=labelSize)
-      span.label__title=name
+      span.label__title=nameRus
   `;
 
-// mountain-icon.propTypes = {}
+MountainIcon.propTypes = {
+  nameEng: PropTypes.string,
+  nameRus: PropTypes.string,
+  labelSize: PropTypes.string,
+  className: PropTypes.string,
+};
 
 export default MountainIcon;

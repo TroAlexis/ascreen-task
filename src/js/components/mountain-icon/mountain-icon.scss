@@ -21,7 +21,7 @@ $label-sizes: 190, 200, 230, 245, 260;
 	transition: transform 100ms ease-in;
 
 	&:hover {
-		transform: scale(1.025);
+		transform: scale(1.025) rotate(-1deg);
 	}
 
 	.label {

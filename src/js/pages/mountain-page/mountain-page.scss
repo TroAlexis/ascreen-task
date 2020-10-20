@@ -1,9 +1,78 @@
 @import '~Scss/config';
 
 .mountain-page {
-	display: grid;
-	flex: 1 1 auto;
-	grid-template-rows: 100%;
+	position: relative;
 
-	grid-template-columns: 57.81% 42.19%;
+	display: flex;
+	flex: 1 1 auto;
+	overflow: hidden;
+}
+
+.carousel {
+	width: 57.81%;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	width: 42.19%;
+}
+
+:global {
+	.info-enter {
+		width: 0;
+
+		transform: translateX(100%);
+		opacity: 0;
+	}
+
+	.info-enter-active {
+		width: 42.19%;
+
+		transform: translateX(0%);
+		opacity: 1;
+
+		transition: all 300ms;
+	}
+
+	.info-exit {
+		transform: translateX(0%);
+		opacity: 1;
+	}
+
+	.info-exit-active {
+		width: 0;
+
+		transform: translateX(250%);
+		opacity: 0;
+
+		transition: all 300ms;
+	}
+
+	.info-exit-done {
+		width: 0;
+		overflow: hidden;
+	}
+
+	.gallery-enter-active {
+		width: 100%;
+
+		transition: width 500ms;
+	}
+
+	.gallery-enter-done {
+		width: 100%;
+	}
+
+	.gallery-exit {
+		width: 100%;
+	}
+
+	.gallery-exit-active {
+		width: 57.81%;
+
+		transition: width 500ms;
+	}
+
 }
