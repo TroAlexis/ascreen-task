@@ -35,12 +35,12 @@ const buildWebpackConfig = merge(baseWebpackConfig, {
       test: /\.(jpe?g|png|gif|svg)$/i,
       jpegtran: null,
       // Optimization 1-7 levels.
-      optipng: { optimizationLevel: 7 },
+      optipng: { optimizationLevel: 4 },
       // Optimization 1-3 levels.
       gifsicle: { optimizationLevel: 3 },
       plugins: [
         ImageMinMozJpeg({
-          quality: 73,
+          quality: 88,
           // progressive or arithmetic encoding available
           progressive: true,
         }),
