@@ -27,15 +27,15 @@ const buildWebpackConfig = merge(baseWebpackConfig, {
       context: baseWebpackConfig.externals.paths.src,
       fix: true,
     }),
-    new StylelintPlugin({
-      fix: true,
-    }),
+    // new StylelintPlugin({
+    //   fix: true,
+    // }),
     // Optimize images
     new ImageMinPlugin({
       test: /\.(jpe?g|png|gif|svg)$/i,
       jpegtran: null,
       // Optimization 1-7 levels.
-      optipng: { optimizationLevel: 4 },
+      optipng: { optimizationLevel: 1 },
       // Optimization 1-3 levels.
       gifsicle: { optimizationLevel: 3 },
       plugins: [

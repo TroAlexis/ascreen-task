@@ -6,17 +6,22 @@
 html {
 	color: $color-font--main;
 	font-size: $font-size--main;
-	@include mq('desktop', max) {
-		font-size: 15px;
-	}
-	@include mq('tablet', max) {
+
+
+	@include mq(1750px, max) {
 		font-size: 14px;
 	}
-	@include mq('phablet', max) {
-		font-size: 13px;
-	}
-	@include mq('phone', max) {
+
+	@include mq(1500px, max) {
 		font-size: 12px;
+	}
+
+	@include mq(1250px, max) {
+		font-size: 10px;
+	}
+
+	@include mq(1050px, max) {
+		font-size: 8px;
 	}
 }
 

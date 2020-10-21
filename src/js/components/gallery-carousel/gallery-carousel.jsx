@@ -32,7 +32,7 @@ class GalleryCarousel extends React.Component {
               img(src=require('Images/mountain-photos/' + url + '.jpg') alt=alt styleName=currentSlide===index? "active": "" key=index)
               
           .controls
-            Link.controls__back(to="/")
+            Link.controls__back(to="/ascreen-task/")
             .controls__thumbs
               each slide, index in slides
                 span.controls__thumb(styleName=currentSlide===index? "active": "" onClick=() => this.setCurrentSlide(index) key=index)

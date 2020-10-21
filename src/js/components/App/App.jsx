@@ -10,9 +10,9 @@ export default class App extends React.Component {
   render() {
     return pug`
       Switch
-        Route(exact path="/" component=HomePage)
+        Route(exact path="/ascreen-task/" component=HomePage)
           
-        Route(path="/mountains/" render=${(props) => pug`MountainPage(...props)`})
+        Route(path="/ascreen-task/mountains/" render=${(props) => pug`MountainPage(...props)`})
     `;
   }
 }

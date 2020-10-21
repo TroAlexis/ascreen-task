@@ -7,7 +7,7 @@ import './mountain-icon.scss';
 const MountainIcon = ({
   nameEng, nameRus, labelSize, className,
 }) => pug`
-  Link(to="/mountains/"+nameEng).mountain-icon(className=className)
+  Link(to="/ascreen-task/mountains/"+nameEng).mountain-icon(className=className)
     img.icon(src=require('Images/mountain-icons/'+nameEng+'.png'))
     .label(className=labelSize)
       span.label__title=nameRus

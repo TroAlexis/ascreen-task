@@ -1,3 +1,6 @@
+@import '~Scss/config';
+
+
 .homepage {
 	position: relative;
 
@@ -14,39 +17,79 @@
 .lyavochorr {
 	top: 2.31%;
 	left: 52.44%;
+
+	img {
+		width: rem(312px);
+		height: rem(185px);
+	}
 }
 
 .chasnachorr {
 	top: 21.85%;
 	left: 22.76%;
+
+	img {
+		width: rem(248px);
+		height: rem(136px);
+	}
 }
 
 .fersmana {
 	top: 36.85%;
 	left: 14.74%;
+
+	img {
+		width: rem(245px);
+		height: rem(142px);
+	}
 }
 
 .udichvymchorr {
 	top: 36.85%;
 	left: 29.43%;
+
+	img {
+		width: rem(224px);
+		height: rem(142px);
+	}
 }
 
 .kykisvymchorr {
 	top: 27.31%;
 	left: 41.35%;
+
+	img {
+		width: rem(313px);
+		height: rem(186px);
+	}
 }
 
 .tahtarvymchorr {
 	top: 51.02%;
 	left: 33.13%;
+
+	img {
+		width: rem(322px);
+		height: rem(150px);
+	}
 }
 
 .vudiavrchorr {
 	top: 71.39%;
 	left: 31.25%;
+
+	img {
+		width: rem(229px);
+		height: rem(132px);
+	}
 }
 
 .aikyivenchorr {
 	top: 75.37%;
 	left: 49.53%;
+
+	img {
+		width: rem(295px);
+		height: rem(159px);
+	}
 }

@@ -31,7 +31,7 @@ class GalleryInfo extends React.Component {
     return pug`
       section.gallery-info(className=className)
         h1.title=name
-        CustomScrollbar(style={height: 610} onUpdate=this.handleScroll)
+        CustomScrollbar(style={height: 610} onUpdate=this.handleScroll).article
           each paragraph,index in info
             p.article__paragraph(key=index)=paragraph
             
